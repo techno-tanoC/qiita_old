@@ -10,7 +10,7 @@ pub enum StatusCode {
 }
 
 impl StatusCode {
-    pub fn from_code(code: i16) -> Option<Self> {
+    pub(crate) fn from_code(code: i16) -> Option<Self> {
         use StatusCode::*;
 
         match code {
