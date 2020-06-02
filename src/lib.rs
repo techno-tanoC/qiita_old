@@ -1,3 +1,4 @@
+pub mod page;
 pub mod token;
 
 #[cfg(test)]
