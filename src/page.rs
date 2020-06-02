@@ -1,5 +1,7 @@
+use serde::Serialize;
 use std::default::Default;
 
+#[derive(Debug, Clone, Serialize)]
 pub struct Page {
     pub(crate) page: u16,
     pub(crate) per_page: u16,
@@ -13,10 +15,6 @@ impl Page {
         else {
             None
         }
-    }
-
-    pub(crate) fn to_query(&self) -> String {
-        format!("page={}&per_page={}", self.page, self.per_page)
     }
 }
 
