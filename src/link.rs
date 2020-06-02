@@ -7,7 +7,13 @@ pub struct Link {
 }
 
 impl Link {
-    pub fn new(total_count: u16, first: Option<String>, prev: Option<String>, next: Option<String>, last: Option<String>) -> Self {
+    pub fn new(
+        total_count: u16,
+        first: Option<String>,
+        prev: Option<String>,
+        next: Option<String>,
+        last: Option<String>)
+    -> Self {
         Link {
             total_count,
             first,
